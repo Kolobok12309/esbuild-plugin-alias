@@ -34,7 +34,16 @@
     };
   });
 
+  // test/fixtures/foo/bar/baz/foo.js
+  var require_foo = __commonJS((exports, module) => {
+    module.exports = {
+      foo: "bar_baz"
+    };
+  });
+
   // test/fixtures/input.js
   var import_settings = __toModule(require_settings_dev());
+  var import_foo = __toModule(require_foo());
   console.log(import_settings.default.test);
+  console.log(import_foo.default.foo);
 })();

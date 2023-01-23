@@ -18,6 +18,7 @@ describe('Main tests', () => {
       plugins: [
         alias({
           'settings.env': resolvePath('fixtures/settings.dev.js'),
+          '@bar/baz/': resolvePath('fixtures/foo/bar/baz'),
         }),
       ],
       write: false,

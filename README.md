@@ -31,6 +31,7 @@ esbuild.build({
   plugins: [
     alias({
       'imported-path': '/home/user/lib/src/resolved-path',
+      '@lib/src/': '/home/user/lib/src',
     }),
   ],
 })
